@@ -4,5 +4,5 @@ import { render, screen } from "@testing-library/react";
 
 test("should render 'Hello!👋'", () => {
   render(<App />);
-  expect(screen.getByText("Hello!👋"));
+  expect(screen.getByText("Hello!👋 How's it going?"));
 });
