@@ -25,3 +25,6 @@ dist-ssr
 
 # Vitest reports and artifacts
 .vitest/
+
+.vercel
+.env*
