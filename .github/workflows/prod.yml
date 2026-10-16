@@ -13,7 +13,7 @@ jobs:
   Deploy-Production:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - run: npm install --global vercel@latest
       - run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
       - run: vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
