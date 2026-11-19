@@ -6,6 +6,7 @@ import classes from "./ProductList.module.css";
 import { Pagination } from "../../../../components/pagination/components/pagination/Pagination.tsx";
 import { useEffect } from "react";
 import { PAGE_SIZE } from "../../constants.ts";
+import { ErrorBlock } from "../../../../components/errors/error-block/ErrorBlock.tsx";
 
 function ProductList() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -60,7 +61,9 @@ function ProductList() {
   }
 
   if (isError) {
-    return <p>{error.message}</p>;
+    return (
+      <ErrorBlock error={error} onRetry={refetch} isRetrying={isFetching} />
+    );
   }
 
   const productList = data.products.map((product: Product) => {
