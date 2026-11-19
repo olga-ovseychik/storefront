@@ -1,73 +1,75 @@
 :root {
-    font-family: 'InstrumentSansRegular', sans-serif;
-    max-width: 1280px;
-    margin: 0 auto;
+  font-family: "InstrumentSansRegular", sans-serif;
+  max-width: 1280px;
+  margin: 0 auto;
 
-    --font-size-xxl: 26px;
-    --line-height-xxl: 32px;
-    --letter-spacing-xxl: -0.13px;
+  --font-size-xxl: 26px;
+  --line-height-xxl: 32px;
+  --letter-spacing-xxl: -0.13px;
 
-    --font-size-m: 16px;
-    --line-height-m: 22px;
-    --letter-spacing-m: -0.08px;
+  --font-size-m: 16px;
+  --line-height-m: 22px;
+  --letter-spacing-m: -0.08px;
 
-    --font-size-s: 14px;
-    --line-height-s: 20px;
-    --letter-spacing-s: -0.07px;
+  --font-size-s: 14px;
+  --line-height-s: 20px;
+  --letter-spacing-s: -0.07px;
 
-    --font-size-xs: 13px;
-    --line-height-xs: 16px;
-    --letter-spacing-xs: -0.07px;
+  --font-size-xs: 13px;
+  --line-height-xs: 16px;
+  --letter-spacing-xs: -0.07px;
 
-    --font-size-xxs: 12px;
-    --line-height-xxs: 16px;
-    --letter-spacing-xxs: -0.06px;
+  --font-size-xxs: 12px;
+  --line-height-xxs: 16px;
+  --letter-spacing-xxs: -0.06px;
 
-    --font-size-3xs: 11px;
-    --line-height-3xs: 14px;
-    --letter-spacing-3xs: -0.06px;
+  --font-size-3xs: 11px;
+  --line-height-3xs: 14px;
+  --letter-spacing-3xs: -0.06px;
 
-    --color-neutral-900: #1a1a1a;
-    --color-neutral-800: #222222;
-    --color-neutral-700: #444444;
-    --color-neutral-600: #6e6e6e;
-    --color-neutral-200: #ebebeb;
-    --color-neutral-100: #f2f2f2;
+  --color-neutral-900: #1a1a1a;
+  --color-neutral-800: #222222;
+  --color-neutral-700: #444444;
+  --color-neutral-600: #6e6e6e;
+  --color-neutral-200: #ebebeb;
+  --color-neutral-100: #f2f2f2;
 
-    --color-success-800: #007d00;
-    --color-success-400: #b6d8ac;
-    --color-success-200: #e3f3e1;
-    --color-success-100: #eef7ed;
+  --color-success-800: #007d00;
+  --color-success-400: #b6d8ac;
+  --color-success-200: #e3f3e1;
+  --color-success-100: #eef7ed;
 
-    --color-danger-600: #e7000b;
-    --color-danger-100: #ffe2e2;
+  --color-danger-600: #e7000b;
+  --color-danger-100: #ffe2e2;
 
-    --color-warning-50: #fff7ed;
-    --color-warning-100: #fef3c6;
-    --color-warning-500: #FFBF00;
+  --color-warning-50: #fff7ed;
+  --color-warning-100: #fef3c6;
+  --color-warning-500: #ffbf00;
 
-    --color-black: #000000;
-    --color-white: #ffffff;
+  --color-black: #000000;
+  --color-white: #ffffff;
 
-    --radius4: 4px;
-    --radius8: 8px;
+  --radius4: 4px;
+  --radius8: 8px;
 }
 
 @font-face {
-    font-family: "InstrumentSansRegular";
-    src:local("Instrument-Sans"),
-    url('./assets/fonts/Instrument_Sans/InstrumentSans-Regular.ttf');
-}
-
-
-@font-face {
-    font-family: "InstrumentSansMedium";
-    src:local("Instrument-Sans"),
-    url('./assets/fonts/Instrument_Sans/InstrumentSans-Medium.ttf');
+  font-family: "InstrumentSansRegular";
+  src:
+    local("Instrument-Sans"),
+    url("./assets/fonts/Instrument_Sans/InstrumentSans-Regular.ttf");
 }
 
 @font-face {
-    font-family: "InstrumentSansBold";
-    src:local("Instrument-Sans"),
-    url('./assets/fonts/Instrument_Sans/InstrumentSans-Bold.ttf');
+  font-family: "InstrumentSansMedium";
+  src:
+    local("Instrument-Sans"),
+    url("./assets/fonts/Instrument_Sans/InstrumentSans-Medium.ttf");
+}
+
+@font-face {
+  font-family: "InstrumentSansBold";
+  src:
+    local("Instrument-Sans"),
+    url("./assets/fonts/Instrument_Sans/InstrumentSans-Bold.ttf");
 }

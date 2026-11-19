@@ -2,9 +2,8 @@ import { render, screen, fireEvent, waitFor } from "@testing-library/react";
 import { createProduct } from "../../../../testing/mocks/data/product.factory.ts";
 import ProductCard from "./ProductCard.tsx";
 
-
-describe('ProductCard component', () => {
-  describe('without discount', () => {
+describe("ProductCard component", () => {
+  describe("without discount", () => {
     it("renders product details with regular price", () => {
       const mockItem = createProduct({ discountPercentage: undefined });
       const priceParts = mockItem.price.toString().split(".");
@@ -31,10 +30,9 @@ describe('ProductCard component', () => {
         screen.getByTestId("product-price-decimal-part")
       ).toHaveTextContent(priceParts[1]);
     });
-  })
+  });
 
-
-  describe('with discount', () => {
+  describe("with discount", () => {
     it("renders the discounted price instead of the original", () => {
       const mockItem = createProduct({ discountPercentage: 10, price: 100 });
       render(<ProductCard item={mockItem} />);
@@ -58,7 +56,7 @@ describe('ProductCard component', () => {
         /100/
       );
     });
-  })
+  });
 
   it("should display Free Delivery if price is equal or more than 1000", () => {
     const mockItem = createProduct({ price: 1000 });
@@ -99,7 +97,7 @@ describe('ProductCard component', () => {
     await waitFor(() => {
       expect(screen.getByTestId("add-to-wishlist-button")).toBeInTheDocument();
       expect(screen.getByTestId("add-to-cart-button")).toBeInTheDocument();
-    })
+    });
   });
 
   it("should hide action buttons when onMouseLeave event occurs", async () => {
@@ -109,8 +107,8 @@ describe('ProductCard component', () => {
     fireEvent.mouseLeave(screen.getByTestId("product-card"));
 
     await waitFor(() => {
-      expect(screen.queryByTestId("add-to-wishlist-button")).toBeNull()
+      expect(screen.queryByTestId("add-to-wishlist-button")).toBeNull();
       expect(screen.queryByTestId("add-to-cart-button")).toBeNull();
     });
   });
-})
+});

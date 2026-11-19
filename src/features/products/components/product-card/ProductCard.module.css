@@ -1,262 +1,267 @@
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 16px;
-    border-radius: 0.5rem;
-    border: 1px solid var(--color-neutral-200);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 16px;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-neutral-200);
 }
 
 .header {
-    position: relative;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 16px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 16px;
 }
 
 .addToWishlistButton {
-    position: absolute;
-    right: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 0;
-    border-radius: var(--radius8);
-    font-size: var(--font-size-s);
-    line-height: var(--line-height-s);
-    letter-spacing: var(--letter-spacing-s);
-    font-weight: normal;
-    text-decoration: none;
-    background-color: var(--color-white);
-    color: var(--color-neutral-700);
-    transition: background-color 0.2s;
-    min-height: 36px;
-    min-width: 36px;
-    cursor: pointer;
+  position: absolute;
+  right: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  border-radius: var(--radius8);
+  font-size: var(--font-size-s);
+  line-height: var(--line-height-s);
+  letter-spacing: var(--letter-spacing-s);
+  font-weight: normal;
+  text-decoration: none;
+  background-color: var(--color-white);
+  color: var(--color-neutral-700);
+  transition: background-color 0.2s;
+  min-height: 36px;
+  min-width: 36px;
+  cursor: pointer;
 }
 
 .bestSellerBadgeWrapper {
-    position: absolute;
-    left: 0;
-    width: fit-content;
-    padding-inline: 4px;
-    display: flex;
-    align-items: center;
-    height: 20px;
-    background: var(--color-warning-50);
-    border-radius: var(--radius4);
-    color: var(--color-warning-500);
-    font-size: var(--font-size-xs);
-    line-height: var(--line-height-xs);
-    letter-spacing: var(--letter-spacing-xs);
+  position: absolute;
+  left: 0;
+  width: fit-content;
+  padding-inline: 4px;
+  display: flex;
+  align-items: center;
+  height: 20px;
+  background: var(--color-warning-50);
+  border-radius: var(--radius4);
+  color: var(--color-warning-500);
+  font-size: var(--font-size-xs);
+  line-height: var(--line-height-xs);
+  letter-spacing: var(--letter-spacing-xs);
 }
 
 .addToWishlistButton:hover {
-    background-color: var(--color-neutral-200);
-    color: var(--color-neutral-800);
+  background-color: var(--color-neutral-200);
+  color: var(--color-neutral-800);
 }
 
 .cardInfoWrapper {
-    display: flex;
-    flex-direction: column;
-    align-self: self-start;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-self: self-start;
+  width: 100%;
 }
 
 .image {
-    width: 100%;
-    max-width: 240px;
-    max-height: 240px;
+  width: 100%;
+  max-width: 240px;
+  max-height: 240px;
 }
 
-.title, .brandWrapper {
-    margin: 0;
-    font-family: "InstrumentSansMedium", sans-serif;
-    font-size: var(--font-size-m);
-    line-height: var(--line-height-m);
-    letter-spacing: var(--letter-spacing-m);
-    color: var(--color-neutral-900);
-    font-weight: 500;
-    cursor: pointer;
+.title,
+.brandWrapper {
+  margin: 0;
+  font-family: "InstrumentSansMedium", sans-serif;
+  font-size: var(--font-size-m);
+  line-height: var(--line-height-m);
+  letter-spacing: var(--letter-spacing-m);
+  color: var(--color-neutral-900);
+  font-weight: 500;
+  cursor: pointer;
 }
 
-.title:hover, .brandWrapper:hover {
-    text-decoration: underline;
+.title:hover,
+.brandWrapper:hover {
+  text-decoration: underline;
 }
 
 .brandText {
-    font-family: "InstrumentSansBold", sans-serif;
-    text-transform: uppercase;
+  font-family: "InstrumentSansBold", sans-serif;
+  text-transform: uppercase;
 }
 
 .link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .ratingPartsWrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
 }
 
-.rating, .reviewsCount {
-    margin-left: 4px;
-    color: var(--color-neutral-800);
-    font-size: var(--font-size-xs);
-    line-height: var(--line-height-xs);
-    letter-spacing: var(--letter-spacing-xs);
-    cursor: pointer;
+.rating,
+.reviewsCount {
+  margin-left: 4px;
+  color: var(--color-neutral-800);
+  font-size: var(--font-size-xs);
+  line-height: var(--line-height-xs);
+  letter-spacing: var(--letter-spacing-xs);
+  cursor: pointer;
 }
 
 .reviewsCount {
-    color: var(--color-neutral-700);
+  color: var(--color-neutral-700);
 }
 
 .reviewsCount:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .offerWrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 .origPriceWrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .decimalWrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
 }
 
 .priceWrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
 }
 
 .price {
-    font-size: var(--font-size-xxl);
-    line-height: var(--line-height-xxl);
-    letter-spacing: var(--letter-spacing-xxl);
-    color: var(--color-neutral-900);
-    font-weight: normal;
-    display: inline-flex;
-    margin-right: 1px;
-    align-items: center;
-    height: 28px;
-    cursor: default;
+  font-size: var(--font-size-xxl);
+  line-height: var(--line-height-xxl);
+  letter-spacing: var(--letter-spacing-xxl);
+  color: var(--color-neutral-900);
+  font-weight: normal;
+  display: inline-flex;
+  margin-right: 1px;
+  align-items: center;
+  height: 28px;
+  cursor: default;
 }
 
-.decimalPart, .currency {
-    font-size: var(--font-size-3xs);
-    line-height: var(--line-height-3xs);
-    letter-spacing: var(--letter-spacing-3xs);
-    color: var(--color-neutral-900);
-    font-weight: normal;
-    text-decoration: none;
+.decimalPart,
+.currency {
+  font-size: var(--font-size-3xs);
+  line-height: var(--line-height-3xs);
+  letter-spacing: var(--letter-spacing-3xs);
+  color: var(--color-neutral-900);
+  font-weight: normal;
+  text-decoration: none;
 }
 
 .discountPrice {
-    color: var(--color-success-800);
+  color: var(--color-success-800);
 }
 
 .bottomWrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-bottom: 16px;
-    padding-top: 20px;
-    min-height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 16px;
+  padding-top: 20px;
+  min-height: 40px;
 }
 
 .addToBasketButton {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    border-radius: var(--radius8);
-    font-size: var(--font-size-s);
-    line-height: var(--line-height-s);
-    letter-spacing: var(--letter-spacing-s);
-    font-weight: normal;
-    text-decoration: none;
-    background-color: var(--color-white);
-    color: var(--color-success-800);
-    border: 1px solid var(--color-success-400);
-    transition: background-color 0.2s;
-    max-height: 40px;
-    max-width: 40px;
-    cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: var(--radius8);
+  font-size: var(--font-size-s);
+  line-height: var(--line-height-s);
+  letter-spacing: var(--letter-spacing-s);
+  font-weight: normal;
+  text-decoration: none;
+  background-color: var(--color-white);
+  color: var(--color-success-800);
+  border: 1px solid var(--color-success-400);
+  transition: background-color 0.2s;
+  max-height: 40px;
+  max-width: 40px;
+  cursor: pointer;
 }
 
 .addToBasketButton:hover {
-    border: 1px solid var(--color-success-800);
-    background-color: var(--color-success-200);
+  border: 1px solid var(--color-success-800);
+  background-color: var(--color-success-200);
 }
 
 .discount {
-    cursor: default;
-    padding: 2px 8px;
-    font-size: var(--font-size-s);
-    line-height: var(--line-height-s);
-    letter-spacing: var(--letter-spacing-s);
-    color: var(--color-success-800);
-    font-weight: normal;
-    height: 24px;
-    background: var(--color-success-100);
-    border-radius: var(--radius4);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  cursor: default;
+  padding: 2px 8px;
+  font-size: var(--font-size-s);
+  line-height: var(--line-height-s);
+  letter-spacing: var(--letter-spacing-s);
+  color: var(--color-success-800);
+  font-weight: normal;
+  height: 24px;
+  background: var(--color-success-100);
+  border-radius: var(--radius4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.previousPrice, .deliveryWrapper {
-    font-size: var(--font-size-xxs);
-    line-height: var(--line-height-xxs);
-    letter-spacing: var(--letter-spacing-xxs);
-    color: var(--color-neutral-600);
-    font-weight: normal;
+.previousPrice,
+.deliveryWrapper {
+  font-size: var(--font-size-xxs);
+  line-height: var(--line-height-xxs);
+  letter-spacing: var(--letter-spacing-xxs);
+  color: var(--color-neutral-600);
+  font-weight: normal;
 }
 
 .deliveryWrapper {
-    width: fit-content;
-    padding-inline: 4px;
-    color: var(--color-success-800);
-    height: 20px;
-    background: var(--color-success-100);
-    border-radius: var(--radius4);
-    display: flex;
-    align-items: center;
+  width: fit-content;
+  padding-inline: 4px;
+  color: var(--color-success-800);
+  height: 20px;
+  background: var(--color-success-100);
+  border-radius: var(--radius4);
+  display: flex;
+  align-items: center;
 }
 
 .deliveryText {
-    margin-left: 4px;
+  margin-left: 4px;
 }
 
 .stockWrapper {
-    margin-top: 16px;
-    width: fit-content;
-    padding-inline: 4px;
-    display: flex;
-    align-items: center;
-    gap: 2px;
-    color: var(--color-danger-600);
-    height: 20px;
-    background: var(--color-danger-100);
-    border-radius: var(--radius4);
-    font-size: var(--font-size-xs);
-    line-height: var(--line-height-xs);
-    letter-spacing: var(--letter-spacing-xs);
-    font-weight: normal;
+  margin-top: 16px;
+  width: fit-content;
+  padding-inline: 4px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  color: var(--color-danger-600);
+  height: 20px;
+  background: var(--color-danger-100);
+  border-radius: var(--radius4);
+  font-size: var(--font-size-xs);
+  line-height: var(--line-height-xs);
+  letter-spacing: var(--letter-spacing-xs);
+  font-weight: normal;
 }
