@@ -56,3 +56,10 @@ export type ProductItemProps = Pick<
   | "description"
   | "availabilityStatus"
 >;
+
+export interface ProductsResponse {
+  products: Product[];
+  total: number;
+  skip: number;
+  limit: number;
+}
