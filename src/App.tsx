@@ -1,7 +1,8 @@
+import ProductList from "./features/products/components/product-list/ProductList.tsx";
 import "./App.css";
 
 function App() {
-  return <p>Hello!👋 How's it going?</p>;
+  return <ProductList />;
 }
 
 export default App;
