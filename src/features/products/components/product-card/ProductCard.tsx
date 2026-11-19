@@ -56,13 +56,16 @@ function ProductCard({ item }: { item: ProductItemProps }) {
     <div
       className={classes.wrapper}
       onMouseEnter={() => setShowActions(true)}
-      onMouseLeave={() => setShowActions(false)} data-testid="product-card">
+      onMouseLeave={() => setShowActions(false)}
+      data-testid="product-card">
       <div className={classes.header}>
         <img
           src={item.images[0]}
           className={classes.image}
           alt={item.title}
           data-testid="card-image"
+          loading="lazy"
+          decoding="async"
         />
         {item.rating > 4.5 && (
           <div className={classes.bestSellerBadgeWrapper}>
